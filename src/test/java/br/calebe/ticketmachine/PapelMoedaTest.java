@@ -13,4 +13,10 @@ public class PapelMoedaTest {
         PapelMoeda papelMoeda = new PapelMoeda(2, 0);
         assertEquals(2, papelMoeda.getValor());
     }
+
+    @Test
+    public void GetQuantidadeTeste(){
+        PapelMoeda papelMoeda = new PapelMoeda(2, 0);
+        assertEquals(0, papelMoeda.getQuantidade());
+    }
 }
