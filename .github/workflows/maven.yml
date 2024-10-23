@@ -10,9 +10,9 @@ name: maven
 
 on:
   push:
-    branches: [ "main", "testMaven" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "testMaven" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -25,6 +25,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '21'
+        distribution: 'temurin'
         cache: maven
     - name: Build with Maven
       run: mvn package
