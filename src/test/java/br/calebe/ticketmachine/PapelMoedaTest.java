@@ -7,6 +7,7 @@ import br.calebe.ticketmachine.core.*;
 import org.junit.Test;
 
 public class PapelMoedaTest {
+
     @Test
     public void GetValorTeste()
     {
